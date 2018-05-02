@@ -14,7 +14,7 @@ function findMatching(drivers, string) {
 
 function fuzzyMatch(drivers, string) {
 
-  return drivers.filter(function (name) {return name.slice(0,string.length) === string} )
+  return drivers.filter(function (name) {return name.slice(0, string.length) === string} )
 
   // let names = []
   // for (const name of drivers) {

@@ -21,11 +21,11 @@ function fuzzyMatch(drivers, string) {
 }
 
 function matchName(drivers, string) {
-  let names = [] 
+  let names = []
   for (const name of drivers) {
     if (name.name === string) {
-      names.push(name.name)
+      names.push(name)
     }
   }
-  return names 
+  return names
 }

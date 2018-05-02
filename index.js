@@ -13,19 +13,16 @@ function findMatching(drivers, string) {
 }
 
 function fuzzyMatch(drivers, string) {
+
+
+
   let names = []
-  let array = drivers.filter(function (name) {return name.slice(0,string.length) === string;)});
-  names = [...array]
-  return names 
-
-
-  // let names = []
-  // for (const name of drivers) {
-  //   if (name.slice(0, string.length) === string) {
-  //     names.push(name)
-  //   }
-  // }
-  // return names
+  for (const name of drivers) {
+    if (name.slice(0, string.length) === string) {
+      names.push(name)
+    }
+  }
+  return names
 }
 
 function matchName(drivers, string) {
